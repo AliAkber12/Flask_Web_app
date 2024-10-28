@@ -2,7 +2,7 @@ from flask import Flask,render_template,request
 import pickle
 import numpy as np
 app = Flask('__name__')
-model=pickle.load(open('C:\\Users\\Alamgeer Chandio\\Documents\\Flask_web_App\\House_price_predict\\model.pkl','rb'))
+model=pickle.load(open('model.pkl','rb'))
 
 @app.route('/')
 def home():
